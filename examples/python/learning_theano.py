@@ -40,7 +40,8 @@ episodes_to_watch = 10
 model_savefile = "/tmp/weights.dump"
 
 # Configuration file path
-config_file_path = os.path.join(vzd.scenarios_path, "simpler_basic.cfg")
+#config_file_path = os.path.join(vzd.scenarios_path, "simpler_basic.cfg")
+config_file_path = "../../scenarios/basic.cfg"
 # config_file_path = os.path.join(vzd.scenarios_path, "rocket_basic.cfg")
 # config_file_path = os.path.join(vzd.scenarios_path, "basic.cfg")
 

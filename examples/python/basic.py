@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     # Sets path to additional resources wad file which is basically your scenario wad.
     # If not specified default maps will be used and it's pretty much useless... unless you want to play good old Doom.
-    game.set_doom_scenario_path(os.path.join(vzd.scenarios_path, "basic.wad"))
+    game.set_doom_scenario_path("/home/roopsa/Documents/ViZDoom/scenarios/MAP01.wad")
 
     # Sets map to start (scenario .wad files can contain many maps).
     game.set_doom_map("map01")
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     # Sets ViZDoom mode (PLAYER, ASYNC_PLAYER, SPECTATOR, ASYNC_SPECTATOR, PLAYER mode is default)
     game.set_mode(vzd.Mode.PLAYER)
 
-    # Enables engine output to console, in case of a problem this might provide additional information.
+    # Enables engine output to console.
     #game.set_console_enabled(True)
 
     # Initialize the game. Further configuration won't take any effect from now on.

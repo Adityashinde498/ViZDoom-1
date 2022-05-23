@@ -16,7 +16,8 @@ import os
 from random import choice
 import vizdoom as vzd
 
-DEFAULT_CONFIG = os.path.join(vzd.scenarios_path, "deadly_corridor.cfg")
+#DEFAULT_CONFIG = os.path.join(vzd.scenarios_path, "deadly_corridor.cfg")
+DEFAULT_CONFIG = "../../scenarios/basic.cfg"
 
 import cv2
 
@@ -36,6 +37,9 @@ if __name__ == "__main__":
 
     # Use other config file if you wish.
     game.load_config(args.config)
+
+    # game.set_console_enabled(True)
+    # game.set_window_visible(False)
 
     # Just uncomment desired format for screen buffer (and map buffer).
     # The last uncommented will be applied.
@@ -120,6 +124,7 @@ if __name__ == "__main__":
             game.make_action(choice(actions))
 
             print("State #" + str(state.number))
+            print(state.game_variables)
             print("=====================")
 
         print("Episode finished!")

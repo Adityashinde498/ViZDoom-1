@@ -5,7 +5,7 @@ import vizdoom as vzd
 from argparse import ArgumentParser
 import cv2
 
-DEFAULT_CONFIG = "../../scenarios/defend_the_center.cfg"
+DEFAULT_CONFIG = "../../scenarios/basic.cfg"
 
 if __name__ == "__main__":
     parser = ArgumentParser("ViZDoom example showing how to use the 'automap' (top-down view map).")
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     game.add_available_game_variable(vzd.GameVariable.POSITION_Z)
 
     # Disables game window (FPP view), we just want to see the automap.
-    game.set_window_visible(False)
+    game.set_window_visible(True)
 
     # This CVAR can be used to make a map follow a player.
     game.add_game_args("+am_followplayer 1")

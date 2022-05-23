@@ -13,7 +13,7 @@ import os
 from time import sleep
 import vizdoom as vzd
 
-DEFAULT_CONFIG = os.path.join(vzd.scenarios_path, "deathmatch.cfg")
+DEFAULT_CONFIG = "../../scenarios/basic.cfg"
 
 if __name__ == "__main__":
     parser = ArgumentParser("ViZDoom example showing how to use SPECTATOR mode.")
