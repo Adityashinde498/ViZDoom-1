@@ -17,7 +17,7 @@ from time import sleep
 import vizdoom as vzd
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":    
     # Create DoomGame instance. It will run the game and communicate with you.
     game = vzd.DoomGame()
 
