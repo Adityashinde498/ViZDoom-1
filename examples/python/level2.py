@@ -61,7 +61,7 @@ if __name__ == "__main__":
     ##############################################################################################################################################################
     """
     #uncomment this if you want to play the game with keyboard controls
-    game.set_mode(vzd.Mode.SPECTATOR)
+    #game.set_mode(vzd.Mode.SPECTATOR)
 
     
     #The buttons you can use to make actionns currently are:
